@@ -31,7 +31,7 @@ Although, we have different platforms with different operating systems, but we c
 
 Like C#, Java is a complied language (unlike JavaScript or PHP as it's an interpreted language). We write our code using java syntax, then it's tested, debugged, and compiled into something called "Java bytecode" ([Bytecode](https://en.wikipedia.org/wiki/Bytecode) in Wikipedia). JVM takes the bytecode and run our programmes. The syntax/code we write in java is compiled/translated into another format "Java bytecode" in order to be run and executed by JVM. JVM runs this bytecode which means decode them into machine language and runs our Java program and interact with the low-level aspects and the underlying of OS. So JVM can run bytecode in any machine that supports JVM.
 
-By the way, JVM is used for other programming languages JVM language itself nad Scala. You can check [the list of JVM languages](https://en.wikipedia.org/wiki/List_of_JVM_languages) (Beyond our topic :-)
+By the way, JVM is used for other programming languages JVM language itself and Scala. You can check [the list of JVM languages](https://en.wikipedia.org/wiki/List_of_JVM_languages) (Beyond our topic :-)
 
 ![JVM Diagram](images/jvm-diagram.jpg)
 
@@ -47,7 +47,9 @@ So JRE contains:
 # JDK (Java Development Kit)
 JDK short for "Java Development Kit" which is a full-featured software development kit that can be installed by developers/programmer for programming in java language. New Java developers might get confused between JDK and JRE. JDK is a package of tools of Java technology provided by Oracle Corporation in order to build, develop, and run Java-based software, whereas JRE is a package of tools for only running Java programmes/applications. If you are not a programmer, you don't need to install JDK? Yes, JDK is used to compile our Java language syntax to bytecode, then JVM which is a subclass of JRE takes the bytecode to convert them to machine language, so to run any Java application, JRE is needed to be installed.
 
-Notice that developers/programers needs to only install JDK software package as this package also comes with a complete JRE (usually called a private runtime) that consists JVM and all of the class libraries, as well as compilers, debuggers, and tools to create programs. Notice that JRE does not contain the JDK. JRE is only needed to be installed to run Java Applications in our computers but not for building them.
+Notice that:
+- Developers/programmers needs to only install JDK software package as this package also comes with a complete JRE (usually called a private runtime) that consists JVM and all of the class libraries, as well as compilers, debuggers, and tools to create programs. 
+- JRE does not contain the JDK. JRE is only needed to be installed to run Java Applications in our computers but not for building them.
 
 ![Java Development Kit-JDK](images/JDK-JRE-JVM.jpg)
 
