@@ -54,8 +54,17 @@ Notice that:
 ![Java Development Kit-JDK](images/JDK-JRE-JVM.jpg)
 
 # IDE (Integrated Development Environment):
-IDE is a special tool that we can use as programmers to write our code. We can also write some code using a simple text editor like notepad! Who does that? IDE(s) come with language support and many plugins that make writing our code easier. The IDE uses the JDK to compile and run our java programs. Beside IDE(s), developers can use Code Editors like Visual Studio, Atom, Sublime, etc to write their code.
-- IntelliJ IDEA is an integrated development environment (IDE) by JetBrains and it's written in Java for developing computer software written in Java. You can download the free version which is called "Community Version".
+IDE is a special tool that we can use as programmers to write our code. We can also write some code using a simple text editor like notepad! Who does that? IDE(s) come with language support and many plugins that make writing our code easier. The IDE uses the JDK to compile and run our java programs. Beside IDE(s), developers can use Code Editors like Visual Studio, Atom, Sublime, etc to write their code.<br>
+There are many IDEs to write Java, the most commonly used and popular ones:
+- IntelliJ IDEA (category Java development tools)g  written in Java for developing computer software written in Java, Kotlin, Groovy, and other JVM-based languages
+- Eclipse (software) (redirect from Eclipse IDE)  second-most-popular IDE for Java development, and, until 2016, was the most popular. Eclipse is written mostly in Java and its primary use is for developing Java applications
+- NetBeans (redirect from NetBeans IDE)  NetBeans is an integrated development environment (IDE) for Java. NetBeans allows applications to be developed from a set of modular software components
+
+Remember that all these IDEs are just tools to write your code. The most important part is how confident or good you are in coding with your programming language. A good basketball player can play on any type of court surface: Hardwood, Asphalt, Multi-Purpose, etc. Yes, each type has pros and cons, but let's us focus on our topic "Java" :-)
+
+If your computer is equipped with good hardware specifications, feel free to install any one or all of them for trying. For sure each one, as a dedicated Java IDE, has very good features to make your coding experience easier and faster, but for the purpose of this course, I will use Visual Studio Code from Microsoft :-)
+
+## Visual Studio Code:
 - Visual Studio Code: for installing and learning about using VS code check below:
     - [Java in Visual Studio Code](https://code.visualstudio.com/docs/languages/java) by Microsoft.
     - [Working with Java in Visual Studio Code Video](https://youtu.be/ZHHUZyy_fOo) video
