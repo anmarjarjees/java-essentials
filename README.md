@@ -107,7 +107,7 @@ As we do with python, we need to setup the Environment Variable for Java. The co
     - FIRST WAY: New Button
         - Click the button "New" then"
             - Variable name:  **JAVA_HOME** 
-            - Variable value:and **C:\Program Files\Java\jdk-17.0.4\bin**. You can check this article "Setting Java variables in Windows"(https://www.ibm.com/docs/en/b2b-integrator/5.2?topic=installation-setting-java-variables-in-windows)
+            - Variable value:and **C:\Program Files\Java\jdk-17.0.4\bin**. You can check this article ["Setting Java variables in Windows"](https://www.ibm.com/docs/en/b2b-integrator/5.2?topic=installation-setting-java-variables-in-windows)
             [new-env-var](images/new-env-var.jpg)
         - After adding the information and clicking "OK", you will see it:
         [new-env-var-added](images/new-env-var-added.jpg)
