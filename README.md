@@ -94,7 +94,7 @@ You can download
 - The JDK will be installed on "C:\Program Files\Java\jdk-17.0.4"
 
 # Set Up a Path Environment Variable
-As we do with python, we need to setup the Environment Variable for Java. The concept behind a environment varaible is available in all Operating Systems, not only for windows and also not only for Java. This step will provide a place in the memory where the programs can access to get a piece of data they need to share. Env. Vars are variables to enable your operating system to find required Java programs and utilities.
+As we do with python, we need to setup the Environment Variable for Java. The concept behind a environment variable is available in all Operating Systems, not only for windows and also not only for Java. This step will provide a place in the memory where the programs can access to get a piece of data they need to share. Env. Vars are variables to enable your operating system to find required Java programs and utilities.
  - Go to "bin" folder of Java that contains all the tools files that we need to have access to from anywhere. this folder has to be placed in the environment variables list of windows, copy the folder path from the address bar:
     -  C:\Program Files\Java\jdk-17.0.4\bin
 - You can access the properties window in many different ways:
@@ -102,7 +102,7 @@ As we do with python, we need to setup the Environment Variable for Java. The co
     - In the search box of the taskbar, type "environment...", the application name should appear, click it
 - From the system properties window, click "Environment Variables":
 ![env-var-button](images/env-var-button.jpg)
-- Environment Variable window will appear, you can add the path to the "User Varaibles for YourName" or the "System Varaibles" for Windows. If you are the only user, so it has the same effect as "System Varaibles" option.
+- Environment Variable window will appear, you can add the path to the "User Variables for YourName" or the "System Variables" for Windows. If you are the only user, so it has the same effect as "System Variables" option.
 - Two different approaches or ways:
     - FIRST WAY: New Button
         - Click the button "New" then"
@@ -113,7 +113,7 @@ As we do with python, we need to setup the Environment Variable for Java. The co
         [new-env-var-added](images/new-env-var-added.jpg)
 
     - SECOND WAY: Edit Button
-        - First click/select the "Path" varaible
+        - First click/select the "Path" variable
         - Click "Edit"
         - Click "New", windows will add a new line so just paste the path "C:\Program Files\Java\jdk-17.0.4\bin"
         - Then OK...
@@ -164,7 +164,7 @@ public class Hello {
 ```
 
 # Packages
-Another important concept to understand, When you start a new project in Java are Packages. Packages are used to group related classes (Remember that Java file is called "Class"). When building big applications, we might end up with too many Java files (classes) so it's better group them under one namespace to avoid any conflict with the varaibles, object that have same names when many projects are merged together. It's exactly when we create folders in our computers to contain, organize, and separate our files. Dedicated Java IDE like IntelliJ IDEA, NetBeans, or Eclipse will ask you for the project name first then might give you the option to add the package name at the very beginning when start a new project, well with IntelliJ, you need to right click the "src" folder and "New" then "Package". VS Code has extensions that we need to install as mentioned above, and we need to add a package manually by revealing the "JAVA PROJECTS" then Right Click the project name, and select "New Package" from the context menu.
+Another important concept to understand, When you start a new project in Java are Packages. Packages are used to group related classes (Remember that Java file is called "Class"). When building big applications, we might end up with too many Java files (classes) so it's better group them under one namespace to avoid any conflict with the variables, object that have same names when many projects are merged together. It's exactly when we create folders in our computers to contain, organize, and separate our files. Dedicated Java IDE like IntelliJ IDEA, NetBeans, or Eclipse will ask you for the project name first then might give you the option to add the package name at the very beginning when start a new project, well with IntelliJ, you need to right click the "src" folder and "New" then "Package". VS Code has extensions that we need to install as mentioned above, and we need to add a package manually by revealing the "JAVA PROJECTS" then Right Click the project name, and select "New Package" from the context menu.
 A project can have multiple packages to group related classes togther under the same folder/category which means under the same package. 
 
 After adding package, you will see a new folder with package name you wrote inside the "src" which is the main folder to save our java files:
