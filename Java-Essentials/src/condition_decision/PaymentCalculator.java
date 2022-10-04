@@ -17,7 +17,7 @@ import java.util.Scanner;
  */
 public class PaymentCalculator {
     public static void main(String[] args) {
-        // Initializing the varaibles with known values (no need for user input):
+        // Initializing the variables with known values (no need for user input):
         int payment = 1000;
         int bonus = 250;
         int quota = 10;

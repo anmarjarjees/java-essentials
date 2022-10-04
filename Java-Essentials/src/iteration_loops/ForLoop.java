@@ -99,7 +99,7 @@ public class ForLoop {
          * Your code which is the main part to answer the assignment goes here:
          * - looping for x number of times where x is how many course did the user
          * finish
-         * - Initialize a total varaible with the value of 0
+         * - Initialize a total variable with the value of 0
          * - Inside the loop:
          * For the first time: Enter your mark for course 1
          * For the second time: Enter your mark for course 2

@@ -1,3 +1,13 @@
+/*
+ * Like in C#, we need boilerplate code template:
+ * Every Java program has to have a class
+ * it contains all our code
+ * 
+ * IMPORTANT NOTE: 
+ * The actual file name in the system 
+ * MUST match the class name in our code
+ * so both are "Hello"
+ */
 /* 
 Please be advised that all these code will be covered in details
 
@@ -23,6 +33,17 @@ public class Hello {
      * println => method for printing in a new line
      */
     public static void main(String[] args) {
+        /*
+         * Like in C#, Java has the main() function
+         * as an entry point to our application (program)
+         * any code inside the main() will be executed automatically
+         * when we run our program
+         * 
+         * Hint: type main then enter => VS code will complete the method
+         */
+
+        // Output the text:
         System.out.println("Hello Java!");
+        System.out.println("Welcome to ou first Java project!");
     }
 }

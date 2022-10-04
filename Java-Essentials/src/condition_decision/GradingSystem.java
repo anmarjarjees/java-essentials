@@ -22,7 +22,7 @@ public class GradingSystem {
         double avg = scanner.nextDouble();
         scanner.close();
 
-        // declare the varaible grade in the class scope to make it global through all
+        // declare the variable grade in the class scope to make it global through all
         // the if/else if blocks:
         char grade;
         if (avg < 60) {

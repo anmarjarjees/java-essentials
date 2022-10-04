@@ -28,7 +28,7 @@ public class InputOutput {
          * We had already imported the scanner above
          * The data type here is "Scanner"
          * 
-         * creating a varaible name "input" take user input with the Data type "Scanner"
+         * creating a variable name "input" take user input with the Data type "Scanner"
          */
         Scanner input = new Scanner(System.in);
         // Through the Scanner object "input" we can access all the "Scanner" class

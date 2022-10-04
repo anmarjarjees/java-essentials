@@ -21,7 +21,7 @@ public class ControlFlow {
         /*
          * NOTE:
          * Your IDE (like VS code) might give you a warning when you open multiple
-         * Scanners varaibles which means many objects without closing
+         * Scanners variables which means many objects without closing
          * and this might lead to a memory leak.
          * 
          * Solutions:
@@ -54,10 +54,10 @@ public class ControlFlow {
          * the entire program or just part of the program
          * 
          * if block and else block are separate as each has its own { }
-         * so any varaible we declare inside if can be accessed inside if block only
-         * or any varaible we declare inside else can be accessed inside else block only
+         * so any variable we declare inside if can be accessed inside if block only
+         * or any variable we declare inside else can be accessed inside else block only
          * 
-         * any varaible we declare outside if/else or any other block (inside the main
+         * any variable we declare outside if/else or any other block (inside the main
          * function)
          * is global and can be accessed from any where in the program
          */

@@ -23,7 +23,7 @@ public class StartingPoint {
 
 /*
  * VS code high light reserved words with different color (We cannot use them
- * for our own varaibles...)
+ * for our own variables...)
  * - package
  * - public
  * - class

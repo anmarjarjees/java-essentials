@@ -11,13 +11,13 @@ import java.util.Scanner;
  * in which it was defined
  * 
  * So the scope of the variable is based on any level of code:
- * - varaible declared inside a method block {}:
+ * - variable declared inside a method block {}:
  * it can be used inside { } of this method
  * 
- * - varaible declared inside a decision structure like an if block {}:
+ * - variable declared inside a decision structure like an if block {}:
  * it can be used inside { } of this if statement
  * 
- *  - varaible declared inside a loop structure like for loop block {}:
+ *  - variable declared inside a loop structure like for loop block {}:
  * it can be used inside { } of this for loop 
  * 
  * and so on...
@@ -102,7 +102,7 @@ public class VariableScope {
     // So they cannot be called/used within the class itself
     // have to be called/used through the instance (object) of "VariableScope" class
     // I had to make them "not static" so we can access
-    // and practice the idea a global non-static varaible "myGlobalVar"
+    // and practice the idea a global non-static variable "myGlobalVar"
     /*
      * If you keep the keyword "static",
      * Java will through this error:
@@ -112,13 +112,13 @@ public class VariableScope {
      * section of OOP
      */
     public void myMethod1() {
-        String myLocal = "I am the text of the local varaible \"myLocal\" inside myMethod1";
+        String myLocal = "I am the text of the local variable \"myLocal\" inside myMethod1";
         System.out.println("myLocal variable 1: " + myLocal);
         System.out.println("The global variable myGlobalVar:" + myGlobalVar);
     }
 
     public void MyMethod2() {
-        String myLocal = "I am the text of the local varaible \"myLocal\" inside myMethod2";
+        String myLocal = "I am the text of the local variable \"myLocal\" inside myMethod2";
         System.out.println("myLocal variable 2: " + myLocal);
         // Let's try to create a local variable (method scope) with the same name as the
         // global one:
@@ -128,7 +128,7 @@ public class VariableScope {
         String myGlobalVar = "Don't be confused, I am no more Global variable :-(";
         System.out.println("The global variable myGlobalVar (I don't think so):" + myGlobalVar);
         /*
-         * To force Java calling the initial global varaible "myGlobalVar"
+         * To force Java calling the initial global variable "myGlobalVar"
          * and ignore the closest one "myGlobalVar"
          * we can use the keyword "this"
          * we are telling Java to use "myGlobalVar" of "this" class

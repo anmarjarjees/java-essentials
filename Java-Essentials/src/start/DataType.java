@@ -1,3 +1,10 @@
+/*
+in VS Code
+CTRL+SHIFT+P ==> Create Java Project ==> Select a new folder
+make a new class file named "InputOutput.java"
+OR:
+File ==> Open Folder
+*/
 package start;
 
 /*

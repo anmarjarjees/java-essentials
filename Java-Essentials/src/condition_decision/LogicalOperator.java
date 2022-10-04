@@ -166,7 +166,7 @@ public class LogicalOperator {
          * System.out.println("He/She can't buy fireworks");
          */
 
-        // Or assign the result to a varaible:
+        // Or assign the result to a variable:
         String msg = (age >= 18) ? "He/She can buy fireworks" : "He/She can't buy fireworks";
         System.out.println(msg);
 
@@ -179,7 +179,7 @@ public class LogicalOperator {
         // Accounting => code: ACC780 => building B, Room 107
 
         // We already defined the age variable with its value
-        // declare teh code varaible:
+        // declare teh code variable:
         var code = "PCN990"; // all in capital
 
         // building the if block for the above logic:
@@ -235,7 +235,7 @@ public class LogicalOperator {
          * we use ! operator with the same logic of age
          * logic: if the age is NOT less than 18 ==> "Yes, you can buy fireworks"
          */
-        age = 18; // Using the same integer varaible "age" but with a new value
+        age = 18; // Using the same integer variable "age" but with a new value
         // Here is the simple solution using our classical way:
         // if (age is greater than or equal to 18)
         if (age >= 18) {

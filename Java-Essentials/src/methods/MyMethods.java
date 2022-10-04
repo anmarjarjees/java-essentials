@@ -92,14 +92,18 @@ public class MyMethods {
      * - The keyword "public" as the name indicate, means that this method can be
      * accessed publicly
      * from any class that uses this method
-     * In OOP, there are 3 commonly used types of access modifiers:
-     * - "public" which is usually the default option in many language if we don't
-     * specify. a method or a data field specified as "public" is accessible
+     * In Java, there are 4 types of access modifiers (visibility modifiers):
+     * - "default": which is the default option in Java if we don't specify
+     * (without adding the keyword)
+     * - "public": a method or a data field specified as "public" is accessible
      * from any class within the same package in the Java program.
-     * - "private": a method or a field that are declared as private can be
-     * accessible within the declared class
+     * - "private": a method or a field that is declared as private
+     * can be accessible within the declared class itself
      * not accessible outside the class.
-     * - "protected": The code is accessible in the same package and subclasses.
+     * (We cannot declare a private class only private field or method)
+     * - "protected": The field/method is accessible by the classes within the same
+     * package
+     * or by subclasses within the same package or other packages
      * 
      * Second Keyword: "static" => Non-access Modifier => do not control access
      * level, but provides other functionality.
