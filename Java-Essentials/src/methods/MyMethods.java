@@ -6,7 +6,7 @@ import java.util.Scanner;
  * method is used for performing a specific task
  * in other programming languages are called "functions" some called it "modules"
  * In Java are called method because they are simply created inside a class file
- * and any function written inside a class are officially called a method
+ * and any function written inside a class are officially called a "method"
  * 
  * In every class file in "Java" there is a required method that added automatically
  * named "main".
@@ -49,12 +49,16 @@ public class MyMethods {
      * https://docs.oracle.com/javase/tutorial/getStarted/application/index.html
      */
     public static void main(String[] args) {
+
         // Let's call our custom methods:
+
+        // calling welcomeEmp() method that has input and output print messages
         welcomeEmp();
+
         // These two methods are just for returning values (no print functionality)
         // We are hard coding the values
-        findAverage(90, 92);
-        isEven(8);
+        findAverage(90, 92); // no output as the returned value is not printed
+        isEven(8); // no output as the returned value is not printed
 
         // We need to output them:
         System.out.println(findAverage(90, 92));
@@ -70,6 +74,10 @@ public class MyMethods {
          * 3. Calling the other function hasEnoughAverage()
          * to check if he pass or fail
          */
+
+        Calculation mathOperation = new Calculation(20, 10);
+
+        System.out.println(mathOperation.add());
 
     } // end main()
 

@@ -6,7 +6,9 @@ package classes_objects;
  * Link https://www.w3schools.com/java/java_wrapper_classes.asp
  */
 public class WrapperClass {
-    public static void main(String[] args) {
+    // no need for a constructor, using the default one => new WrapperClass()
+
+    public void getWrapperVariables() {
         int exam1 = 86; // int is primitive data type
         Integer exam2 = 89; // Integer => is wrapper class for the primitive data type "int"
 

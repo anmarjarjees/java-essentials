@@ -58,6 +58,7 @@ public class MyArray {
          */
         System.out.println("My first luck number is " + myLuckyNumbers[0]);
 
+        // Creating a String array to save students' names
         String[] students = new String[6];
         students[0] = "Alex Chow";
         students[1] = "Martin Smith";
@@ -66,7 +67,7 @@ public class MyArray {
         students[4] = "Kate Wilson";
         students[5] = "Elena Chow";
 
-        System.out.println("My Students: " + students[0]);
+        System.out.println("The first students in the list is " + students[0]);
 
         // If you know the values of an array you can insert them all at once,
         // we can place the values in a comma-separated list, inside curly braces:

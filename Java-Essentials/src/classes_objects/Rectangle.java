@@ -87,8 +87,8 @@ public class Rectangle {
      * 
      * Link: https://docs.oracle.com/javase/tutorial/java/javaOO/accesscontrol.html
      */
-    private double length;
-    private double width;
+    private double length; // is set to 0.0 by default
+    private double width; // is set to 0.0 by default
 
     /*
      * Thinking about the actions (methods)?

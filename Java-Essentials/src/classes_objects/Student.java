@@ -41,8 +41,8 @@ public class Student {
      * 20engineering%2C%20the%20singleton,coordinate%20actions%20across%20the%
      * 20system.
      */
-    private String name;
-    private double average;
+    private String name; // is set to null by default
+    private double average; // is set to 0.0 by default
 
     // Override the default constructor to set default values for the class fields
     public Student() {
@@ -76,6 +76,15 @@ public class Student {
         return average;
     }
 
+    /*
+     * We can set the name field with a simple setter:
+     * 
+     * public void setName(String name) {
+     * this.name = name;
+     * }
+     * 
+     * But it's better to add some validation:
+     */
     public void setName(String name) {
         if (name.length() > 40) {
             System.out.println("Maximum 40 characters");

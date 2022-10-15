@@ -1,15 +1,15 @@
 package classes_objects;
+/*
+ * This class "Main" contains the entry point to our application "main()"
+ */
 
 // We need to import class "List" from java.util package
 import java.util.List;
-import java.io.Console;
 // We need to import class "ArrayList" from java.util package
 import java.util.ArrayList;
 
 // Scanner for getting user's input
 import java.util.Scanner;
-
-import javax.swing.text.StyledEditorKit;
 
 public class Main {
     // Declare our Scanner object inside the main class "Main"
@@ -33,6 +33,10 @@ public class Main {
      * Don't forget "static" for the entry point method
      */
     public static void main(String[] args) {
+        /*
+         * NOTE: We don't need to import our class "Rectangle"
+         * since this class is inside the same package "classes_objects"
+         */
         Rectangle rec1 = new Rectangle();
         rec1.setLength(42);
         rec1.setWidth(98);
@@ -73,8 +77,16 @@ public class Main {
 
         System.out.println("The average of all the students in the class is:" + getClassAverage(students));
 
+        // Calling/Using the WrapperClass
+        WrapperClass wClassObj = new WrapperClass();
+        wClassObj.getWrapperVariables();
+
         scanner.close();
-    }
+
+        // Creating an object from our custom WrapperClass:
+        WrapperClass wrapClass = new WrapperClass();
+        wrapClass.getWrapperVariables();
+    } // end main()
 
     // We can pass our custom objects as arguments also:
 
@@ -101,7 +113,7 @@ public class Main {
         }
         return 0;
     }
-
     // Or we can create a method for that return a student object:
+    // do it here...
 
-}
+} // end class Main

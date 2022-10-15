@@ -61,20 +61,24 @@ public class VariableScope {
                             + " as you will need it in the next semester to build ASP.NET Web Applications");
         }
 
+        // System.out.println(nextLang); // This line will throw an error
+
         // Using the same variable "currentLang" within the same scope of the main()
         // method
         currentLang = "HTML and CSS"; // reassign a value to the same variable "currentLang"
+
+        System.out.println("We are studying " + currentLang);
+
         if (true) {
             /*
-             * Notice that this variable "nextLang" is not the same as the previous one!
-             * Each one is declared in a separate block *
+             * Notice that this variable "nextLang" is not the same as the previous one
+             * inside if (true)!
+             * Each one is declared in a separate block
              */
             String nextLang = "JavaScript";
             System.out.println(
                     "After learning " + currentLang + ", the next logical step is to learn " + nextLang);
         }
-
-        // System.out.println(nextLang); // This line will throw an error
 
     } // end main
 
