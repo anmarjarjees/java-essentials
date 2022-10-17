@@ -224,6 +224,7 @@ Follow the sequence in this chronological order starting from the basic moving t
 6. arrays (package): contains the following classes:
     - MyArray.java
     - ArrayLoop.java
+    - MyArrayList.java
 
 7. classes_objects (package): contains the following classes:
     - Rectangle (the basic of creating classes)
@@ -267,6 +268,14 @@ Follow the sequence in this chronological order starting from the basic moving t
     - Main3
 
 11. user_interface_events (package): [NOTE: This package is not published on GitHub yet]
+We will have at least two source code files"
+- The main program that has the main() method
+- The class file that extends *JFrame class and contains the GUI components
+
+JFrame is the basic window class for a Swing GUI. JFrame can be used in two different ways:
+- Attaching GUI components directly to an object/instance of the class JFrame as we did in the previous package
+- Extending the JFrame class to create your new custom subclass of JFrame that contain the specific component that are needed for our application
+
 
 # Working with GUI Application in Java:
 The Java Client consists of Java Deployment (Applets and Web Start) and Java UI (Swing, AWT and JavaFX) technologies.
@@ -348,9 +357,6 @@ Check this interesting page ["A Visual Guide to Swing Components"](https://web.m
 - GridLayout: Places components in a grid of rows and columns or in equally sized rows and columns
 - GroupLayout: Places components in horizontal and vertical layout separately
 - SpringLayout: Places by relative spacing which is a flexible layout tht emulates all other layouts
-
-
-
 
 # Java AWT (Abstract Window Toolkit)
 One of the oldest GUI frameworks in Java. AWT is an API for creating GUI applications in Java. first

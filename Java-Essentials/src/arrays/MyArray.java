@@ -1,6 +1,19 @@
 package arrays;
 
 /*
+ * Data Structures:
+ * > In any Programming Language
+ * > Containers that is used for storing, accessing, and arrange data o multiple values
+ * > Can have simple and complex forms
+ * 
+ * Examples/Types of some of the commonly used:
+ * Array
+ * Array List
+ * Linked List
+ * Queue
+ * Stack 
+ * Heap
+ * 
  * Arrays are special variables for containing multiple values
  * Instead of many variable for saving multiple values
  * we can have one variable for saving multiple values
@@ -24,11 +37,19 @@ public class MyArray {
         int myLuckyNumber5 = 30;
 
         // Using an array instead:
+        /*
+         * Creating an array using a new operator
+         * and determine the size of the array (how many values can store)
+         */
         int[] myLuckyNumbers = new int[5];
 
+        // Can be done in two lines also!
+        int[] myFavChannelsNumbers; // Declare an array varaible
+        myFavChannelsNumbers = new int[9]; // Initialize the array
+
         /*
-         * - Arrays can have multiple values
-         * - Each element (value) inside the array:
+         * - Arrays can have multiple values but with the same data
+         * - Each value inside the array is called "element", each element:
          * > has a unique index
          * > can act as individual variable
          * > can be accessed through its index value
@@ -40,6 +61,9 @@ public class MyArray {
          * so the first element/item in the array has the index of 0
          * - in the above example:
          * the value/element 10 has the index of 2
+         * 
+         * NOTE: Array's element can also called "Homogeneous Elements"
+         * because they have the same data type
          */
 
         // adding values to an array:
@@ -53,7 +77,7 @@ public class MyArray {
         myLuckyNumbers[4] = 30;
         /*
          * | 9 | 3 |10 |25 |30 | => The array's values
-         * | 0 | 1 | 2 | 3 | 4 | => The indices for each value
+         * | 0 | 1 | 2 | 3 | 4 | => The indices (indexes) for each value
          * (each value has a unique index)
          */
         System.out.println("My first luck number is " + myLuckyNumbers[0]);
@@ -78,7 +102,7 @@ public class MyArray {
         System.out.println(languages[3] + " is very popular language for back-end web development");
 
         /*
-         * Arrays are fixed we cannot add new elements!
+         * Arrays are fixed in size so we cannot add/remove elements!
          */
         // adding a new element:
         // languages[5] = "Java"; // Error: Index 5 out of bounds for length 5
@@ -101,9 +125,14 @@ public class MyArray {
         System.out.println(mySubjects.length);
 
         /*
-         * You have noticed that by convention, Arrays' varaible names are plural
-         * since they store multiple values
+         * NOTES:
+         * - Array itself is always a reference data type even if it holds
+         * primitive or reference data type
+         * - The highest index in the array is its length - 1
+         * - You have noticed that by convention, Arrays' varaible names are plural
+         * since they store multiple values, unless you like to use myArray,
+         * temporaryArray, xArray, etc..
          */
 
-    }
+    } // end main()
 }
