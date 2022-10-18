@@ -40,7 +40,7 @@ public class ControlFlow {
          * 
          */
         Scanner input = new Scanner(System.in);
-        input.close();
+
         int studentAvg = input.nextInt(); // Read user input
 
         if (studentAvg >= 60) {
@@ -75,5 +75,7 @@ public class ControlFlow {
         }
         System.out.println(language.toUpperCase());
         // System.out.println(otherLanguage); Error
+
+        input.close();
     }
 }

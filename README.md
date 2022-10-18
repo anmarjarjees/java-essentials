@@ -38,7 +38,7 @@ By the way, JVM is used for other programming languages JVM language itself and 
 JVM can manage the computer (program) memory automatically in the object life cycle on behalf of the programmer by always checking the memory usage in the heap and stack, which continuously monitor and eliminates unused memory by removing obsolete objects from the memory. This process is called "Garbage Collection".
 
 # JRE (Java Runtime Environment)
-In order for the JVM to work it has to be wrapped or run in a run-time environment that supports the Java language. A runtime environment (runtime system) is a sub-system (software) that is designed to run and execute other software exactly as we have to install node.js runtime environment to run JavaScript without the browser. JRE (Java Runtime Environment) is an installation package that provides a runt-time environment for only running java programs/applications on our machines, but not for developing them. So End-users need to install JRE in order to run our java applications. JVM is just a part/component or a subclass of JRE for "Java Runtime Environment". 
+In order for the JVM to work it has to be wrapped or run in a run-time environment that supports the Java language. A runtime environment (runtime system) is a sub-system (software) that is designed to run and execute other software exactly as we have to install node.js runtime environment to run JavaScript without the browser. JRE (Java Runtime Environment) is an installation package that provides a run-time environment for only running java programs/applications on our machines, but not for developing them. So End-users need to install JRE in order to run our java applications. JVM is just a part/component or a subclass of JRE for "Java Runtime Environment". 
 So JRE contains:
     - JVM
     - Browser plug-ins for executing Java applets
@@ -232,42 +232,20 @@ Follow the sequence in this chronological order starting from the basic moving t
     - Main
     - WrapperClass
     
-8. design_pattern_oop (package): [NOTE: This package is not published on GitHub yet]
-    - p1_classes (sub-package):
-        - Main.java
-        - Person.java
-        - User.java
-    - p2_coupling (sub-package):
-        - Main.java
-        - Member.java
-        - User.java
-    _ p3_interface (sub-package):
-        - Main.java
-        - other classes...
-    _ p4_encapsulation (sub-package):
-        - Main.java
-        - other classes...
-    - p5_abstraction (sub-package):
-        -- Main.java
-        - other classes...
-    - p6_inheritance (sub-package):
-        -- Main.java
-        - other classes...
-    - p7_polymorphism (sub-package):
-        -- Main.java
-        - other classes...
-    - p8_aggregation (sub-package):
-        -- Main.java
-        - other classes...
+8. design_pattern_oop (package): 
+NOTE: This package has been moved to another repo. To learn more about Classes and Objects, check my rep [Java-OOP-UML](https://github.com/anmarjarjees/java-oop-uml)   
 
 9. collections (package): [NOTE: This package is not published on GitHub yet]
 
-10. user_interfaces (package): [NOTE: This package is not published on GitHub yet]
+10. file_input_output
+
+11. user_interfaces (package): [NOTE: This package is not published on 
+GitHub yet]
     - Main1
     - Main2
     - Main3
 
-11. user_interface_events (package): [NOTE: This package is not published on GitHub yet]
+12. user_interface_events (package): [NOTE: This package is not published on GitHub yet]
 We will have at least two source code files"
 - The main program that has the main() method
 - The class file that extends *JFrame class and contains the GUI components
