@@ -8,8 +8,8 @@ package arrays;
  * 
  * Examples/Types of some of the commonly used:
  * Array
- * Array List
- * Linked List
+ * List => Array List and Linked List
+ * HashMap
  * Queue
  * Stack 
  * Heap
@@ -45,10 +45,11 @@ public class MyArray {
 
         // Can be done in two lines also!
         int[] myFavChannelsNumbers; // Declare an array varaible
-        myFavChannelsNumbers = new int[9]; // Initialize the array
+        myFavChannelsNumbers = new int[9]; // Initialize the array with 9 empty places
 
         /*
          * - Arrays can have multiple values but with the same data
+         * - Arrays elements are placed in fixed order
          * - Each value inside the array is called "element", each element:
          * > has a unique index
          * > can act as individual variable

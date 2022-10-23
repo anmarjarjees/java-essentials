@@ -1,20 +1,48 @@
 package arrays;
 
 /* 
- * Array List:
+ * Array List: is part of "collections"
+> Package java.util
+>> Class ArrayList<E>
+>>> java.lang.Object
+>>>> java.util.AbstractCollection<E>
+>>>>> java.util.AbstractList<E>
+>>>>>> java.util.ArrayList<E>
+
+public class ArrayList<E>
+extends AbstractList<E>
+implements List<E>, RandomAccess, Cloneable, Serializable
+
+Link: https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/util/ArrayList.html
  * - Has Flexible size, we can add/remove elements
  * - It's part of the "java.util" package
  * - Can only hold reference data type values (elements), not primitive,
  * The good news there is solution to overcome this limitation
  */
 
-// import...
 // import the "ArrayList" class from "java.util" package
 import java.util.ArrayList;
 
 public class MyArrayList {
     public static void main(String[] args) {
-        // We don't have to specify a size :-)
+        /*
+         * We don't have to specify a size :-)
+         * 
+         * Using the new keyword for the ArrayList constructor
+         * and also using the diamond operator <>
+         * the symbol <> is to define what is called "Generic Type"
+         * = new ArrayList<>()
+         * 
+         * before Java 7, we used to add/repeat the same data type <string>
+         * but then they just removed it to be empty
+         * 
+         * Old Syntax (still valid):
+         * ArrayList<String> myLanguages = new ArrayList<String>();
+         * 
+         * New Syntax:
+         * ArrayList<String> myLanguages = new ArrayList<>();
+         */
+        //
         ArrayList<String> myLanguages = new ArrayList<>();
 
         // using .add() method:
@@ -55,11 +83,15 @@ public class MyArrayList {
         // third element has index of 2:
         cars.set(2, "Jeep");
 
+        // testing:
         System.out.println(cars);
 
         // .remove() method to remove an item from the array list:
         // remove the last item:
-        // cars.remove(cars)
+        cars.remove(cars.size() - 1);
+
+        // testing:
+        System.out.println(cars);
 
         /*
          * Creating an array list of integer values

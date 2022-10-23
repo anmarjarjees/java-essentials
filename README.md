@@ -35,7 +35,7 @@ By the way, JVM is used for other programming languages JVM language itself and 
 ![JVM Diagram](images/jvm-diagram.jpg)
 
 # Garbage Collection:
-JVM can manage the computer (program) memory automatically in the object life cycle on behalf of the programmer by always checking the memory usage in the heap and stack, which continuously monitor and eliminates unused memory by removing obsolete objects from the memory. This process is called "Garbage Collection".
+JVM can manage the computer (program) memory automatically in the object life cycle on behalf of the programmer by always checking the memory usage in the heap and stack, which continuously monitor and eliminates unused memory by removing obsolete objects from the memory. This process is called "Garbage Collection". in other words, JVM as a modern runtime (execution) environment provides "Garbage Collection" to manage the memory automatically on behalf of the programmer. It's a very useful feature for simplifying programming and reducing errors significantly
 
 # JRE (Java Runtime Environment)
 In order for the JVM to work it has to be wrapped or run in a run-time environment that supports the Java language. A runtime environment (runtime system) is a sub-system (software) that is designed to run and execute other software exactly as we have to install node.js runtime environment to run JavaScript without the browser. JRE (Java Runtime Environment) is an installation package that provides a run-time environment for only running java programs/applications on our machines, but not for developing them. So End-users need to install JRE in order to run our java applications. JVM is just a part/component or a subclass of JRE for "Java Runtime Environment". 
@@ -232,121 +232,42 @@ Follow the sequence in this chronological order starting from the basic moving t
     - Main
     - WrapperClass
     
-8. design_pattern_oop (package): 
-NOTE: This package has been moved to another repo. To learn more about Classes and Objects, check my rep [Java-OOP-UML](https://github.com/anmarjarjees/java-oop-uml)   
+9. collections (package): 
+    - MapInfo.java
+    - MapLoop.java
 
-9. collections (package): [NOTE: This package is not published on GitHub yet]
-
-10. file_input_output
-
-11. user_interfaces (package): [NOTE: This package is not published on 
-GitHub yet]
-    - Main1
-    - Main2
-    - Main3
-
-12. user_interface_events (package): [NOTE: This package is not published on GitHub yet]
-We will have at least two source code files"
-- The main program that has the main() method
-- The class file that extends *JFrame class and contains the GUI components
-
-JFrame is the basic window class for a Swing GUI. JFrame can be used in two different ways:
-- Attaching GUI components directly to an object/instance of the class JFrame as we did in the previous package
-- Extending the JFrame class to create your new custom subclass of JFrame that contain the specific component that are needed for our application
+design_pattern_oop (package): 
+NOTE: This package has been moved to another repo. To learn more about Classes and Objects, check my repo [Java-OOP-UML](https://github.com/anmarjarjees/java-oop-uml)   
 
 
-# Working with GUI Application in Java:
-The Java Client consists of Java Deployment (Applets and Web Start) and Java UI (Swing, AWT and JavaFX) technologies.
+10. file_io_operations (package): 
+The basic concepts to review before using File I/O:
+- Main Memory-RAM: Where our variables/constants live through the application runtime and it is volatile. It's used by the CPU frequently to manipulate data quickly
+- Secondary Memory/Storage: like Hard Drive where files live for the long-term, and it is non-volatile
+We can use Java to store our data into files in the secondary memory
 
-We can develop GUI Applications in Java using:
-- JavaFX 
-- Abstract Window Toolkit (AWT)
-- Swing
+The "File" class from the java.io package, allows us to work with files.
 
-For VS Code user, you can check this article ["Working with GUI applications in VS Code"](https://code.visualstudio.com/docs/java/java-gui).
+File operations:
+- Reading data from File => File Input
+- Writing data to File => File Output
 
-You can check this article about ["Java Client Roadmap Update"](https://www.oracle.com/technetwork/java/javase/javaclientroadmapupdate2018mar-4414431.pdf)
+The "File" class methods:
+The File class has many methods for manipulating files including:
+- canRead(): Boolean => Tests whether the file is readable or not
+- canWrite(): Boolean => Tests whether the file is writable or not
+- createNewFile(): Boolean => true if able creates the new unique file
+- delete(): Boolean	=> true if the file is deleted
+- exists():	Boolean => true of the file file exists or false if it does not
+- getName(): String => Returns the name of the file
+- getAbsolutePath(): String	=> Returns the absolute pathname of the file
+- length():	Long =>	Returns the size of the file in bytes
+- list(): String[] => Returns an array of the files in the directory
+- mkdir(): Boolean => Creates a directory
 
-
-# User Interfaces with Swing
-To create Swing Application, we can use and IDE that provides WYSIWYG (What You See Is What You Get) editor to make it easy and faster to arrange the components on the window/frame/panel, or writing or Swing code from scratch. 
-
-Some IDEs comes with WYSIWYG like NetBeans. Without WYSIWYG, we need to use layout our component then adding all the even handling manually.
-
-Most of the Swing GUI components are inherited from "JComponent" and the hierarchy for "JComponent" class:
-"JComponent" class = extends => "Container" class = extends => "Component" class = extends => "Object" class
-
-Class JComponent:
-- java.lang.Object
-    - java.awt.Component
-        - java.awt.Container
-            - javax.swing.JComponent
-
-The base class for all Swing components except top-level containers. To use a component that inherits from JComponent, you must place the component in a containment hierarchy whose root is a top-level Swing container. Top-level Swing containers -- such as JFrame, JDialog, and JApplet -- are specialized components that provide a place for other Swing components to paint themselves.
-
-You can read more about ["javax.swing - Class JComponent"](https://docs.oracle.com/en/java/javase/17/docs/api/java.desktop/javax/swing/JComponent.html)
-
-## Swing Containers
-Swing has a list of top level container that are used to contain the GUI components including JFrame (the one that we will use), JWindow, JDialog, JApplet. All the above containers rely on the "JRootPane". JRootPane manges all Swing containers so it's acting as a container delegate for the top level Swing containers.
-
-These Top-Level containers like our main one "JFrame" has a content pane, like "Panel". Panel is used to contain the visual components of GUI.
-
-Example:
-1- JFrame => the top-level container (Represent the GUI window)
-2- To add item(s) to the GUI window, we need to add another frame "JPanel"
-3- Adding JPanel to the JFrame
-4- Adding JComponents (text fields, buttons, list,...) to the JPanel 
-
-NOTES: 
-- We can change the order in coding like adding JComponents to the JPanel, then adding JPanel to the JFrame. Or, adding JPanel to the JFrame then adding JComponents to the JFrame, is the same.
-- We cannot add JComponents directly to JFrame as the last components will replace all the previous ones, you can see the issue in my code example "Main1.java". So the JComponents have to be added to the "JPanel". 
-
-![JFrame-JPanel-JComponents](/images/JFrame-JPanel-JComponents.jpg)
-
-## Frames and Panels
-- After instantiating our frame, we can add one or more panels that contain(s) the GUI components
-- Frame can be instantiated with or without a title. The JFrame has two instructors:
-    - Empty Constructor
-    - A constructor that accept a string to represent the Window/Frame title. Notice that title can be added later also using .setTitle() method for the JFrame object.
-- Panel(s), JPanel can be added to the JFrame. Swing Application can have multiple JPanels objects inside the JFrame, but only one JFrame object/instance.
-- All our graphical components are being added to the "JPanel"
-- JPanel has a default layout called "FlowLayout", the components are being added from left to write and wrap to the next line when they run out room. Think about the "FlowLayout" is like floating all the HTML element to the left inside their container element.
-
-## Jframe
-Represents the window itself. all the components of the user interface will be inside this window
-
-## Swing Components
-- Swing library has a huge list of components
-- All components inherit from the JComponent class
-- JComponent class extends the Container class
-
-Check this interesting page ["A Visual Guide to Swing Components"](https://web.mit.edu/6.005/www/sp14/psets/ps4/java-6-tutorial/components.html) from Massachusetts Institute of Technology.
-
-## Layout Managers in Swing
- - Layout Managers are classes that control the size and location of each item of the components inside the container.
- - The default layout is called "FlowLayout" which adds elements from left to right (as discussed above)
- 
- Swing provides many different layout managers
- - BorderLayout: Divides the window into five areas: North, South, East, West and Center (the content pane default)
- - BoxLayout: Places/Stacks components in a single row (besides each other) or column (top or each other)
- - CardLayout: Places and manages different/multiple components in a specified area or that share the same display area at different times
- - FlowLayout: Places left to right in a wrapping line/row (the jPanel default)
- - GridBagLayout: Displays components in a grid of cells or in rows and columns; allows components to span cells (rows/columns) and varying sizes
-- GridLayout: Places components in a grid of rows and columns or in equally sized rows and columns
-- GroupLayout: Places components in horizontal and vertical layout separately
-- SpringLayout: Places by relative spacing which is a flexible layout tht emulates all other layouts
-
-# Java AWT (Abstract Window Toolkit)
-One of the oldest GUI frameworks in Java. AWT is an API for creating GUI applications in Java. first
-[AWT in Wikipedia](https://en.wikipedia.org/wiki/Abstract_Window_Toolkit#:~:text=The%20Abstract%20Window%20Toolkit%20(AWT,GUI)%20for%20a%20Java%20program.)
-
-HINT:
-To move Classes between Packages:
-- Open the Class File you want to move
-- Press CTRL+SHIFT+R
-- From the top panel select the package name
-
-You can learn more about ["Moving in VS Code"](https://code.visualstudio.com/docs/java/java-refactoring)
+NOTE: These 2 packages have been moved to another repo. To learn more about Swing/AWT GUI and Events, check my rep [Java-UI-Swing](https://github.com/anmarjarjees/java-ui-swing)   
+user_interfaces (package)
+user_interface_events (package)
 
 # UML (Unified Modeling Language) Learning Resources based on different UML tools Docs:
 

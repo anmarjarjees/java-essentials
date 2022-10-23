@@ -1,0 +1,10 @@
+java.lang: the core language tools and it's available by default.
+java.awt.font: classes and interface relating to fonts..
+java.awt.print: classes and interfaces for a general printing API..
+java.lang: classes that are fundamental to the design of the Java programming language..
+java.net: classes for implementing networking applications..
+java.sql: the API for accessing and processing data stored in a data source (usually a relational database)..
+java.time: the main API for dates, times, instants, and durations..
+java.time.zone: support for time-zones and their rules..
+java.util.concurrent: Utility classes commonly useful in concurrent programming..
+java.util.random: contains classes and interfaces that support a generic API for random number generation..

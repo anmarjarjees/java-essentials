@@ -1,0 +1,20 @@
+the core language tools and it's available by default
+dealing with different types of events fired by AWT components.
+classes and interface relating to fonts.
+classes for creating and modifying images.
+classes and interfaces for a general printing API.
+system input and output through data streams, serialization and the file system.
+classes that are fundamental to the design of the Java programming language.
+classes for performing arbitrary-precision integer arithmetic.
+classes for implementing networking applications.
+classes and interfaces for the security framework.
+the API for accessing and processing data stored in a data source (usually a relational database).
+classes and interfaces for handling text, dates, numbers, and messages.
+the main API for dates, times, instants, and durations.
+classes to print and parse dates and times.
+support for time-zones and their rules.
+support classes, properties, random number, string parsing and scanning classes, and several utility classes.
+Utility classes commonly useful in concurrent programming.
+functional interfaces provide target types for lambda expressions and method references.
+contains classes and interfaces that support a generic API for random number generation.
+classes for matching character sequences against patterns specified by regular expressions.
