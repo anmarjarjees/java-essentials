@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class C9DoubleValue {
     public static void main(String[] args) {
         try {
-            // COPY THE RELATIVE PATH:
+            // COPY THE RELATIVE PATH based on your project folder:
             // Java-Essentials\src\file_io_operations\numbers.txt
             Scanner numFile = new Scanner(new File("Java-Essentials\\src\\file_io_operations\\numbers.txt"));
             PrintWriter pw = new PrintWriter(new File("Java-Essentials\\src\\file_io_operations\\doubling.txt"));

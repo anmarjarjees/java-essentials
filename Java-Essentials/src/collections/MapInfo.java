@@ -1,8 +1,9 @@
 package collections;
 /* 
  * We covered ListArray which is a type of List 
- * which is a type of a "Collection"
+ * and List is a type of a "Collection"
  * 
+ * Map and HashMap are also types of collections
  * HashMap:
  * Package java.util
  * Class HashMap<K,V>
@@ -52,6 +53,9 @@ public class MapInfo {
          * in other words, using the object type of the primitive data type
          * for the same reason as we did with Array list
          * we cannot use primitive data types
+         * int => Integer
+         * double => Double
+         * float => Float
          * 
          * Also the old syntax (still valid):
          * HashMap<String, Integer> studIds = new HashMap<String, Integer>();
@@ -59,7 +63,6 @@ public class MapInfo {
          * But the new one:
          * HashMap<String, Integer> studIds = new HashMap<>();
          */
-
         HashMap<String, Integer> studIds = new HashMap<>();
 
         /*
@@ -70,6 +73,7 @@ public class MapInfo {
          * but they have different implementation under the hood
          */
 
+        // add elements (key and value):
         studIds.put("Alex Chow", 1234);
         studIds.put("Martin Smith", 5321);
         studIds.put("Sam Simpson", 8231);
@@ -105,7 +109,7 @@ public class MapInfo {
         System.out.println(studIds.containsKey("Marcus Miller")); // false
 
         /*
-         * Check if certain value is exists:
+         * .containsValue() => Check if certain value is exists:
          */
         System.out.println(studIds.containsValue(8231)); // true
         System.out.println(studIds.containsValue(9988)); // false
@@ -141,9 +145,16 @@ public class MapInfo {
          * Notice that there is no student with such name,
          * so this change will be ignored
          */
-        studIds.replace("Sara Grand", 9876);
+        studIds.replace("Sara Grand", 9876); // no changes
         // testing:
         System.out.println(studIds);
+
+        // Testing our custom method changeValue():
+        changeValue(studIds, "Kate Wilson", 1010);
+        System.out.println(studIds);
+        
+        // call our method with a NOT exist Key:
+        changeValue(studIds, "James Dean", 1000); // no changes
 
         // Removing an item
         studIds.remove("Allen Chow");
@@ -169,4 +180,12 @@ public class MapInfo {
          */
         System.out.println(studIds.size()); // 5
     } // end main()
+
+    /* 
+     * Adding our custom method for for changing the value of a key
+     * changing the students ID:
+     */
+    static void changeValue(HashMap<String, Integer> tempMap, String key,int value){
+        tempMap.replace(key, tempMap.get(key), value);
+    }
 } // end file class

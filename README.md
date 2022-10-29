@@ -239,8 +239,11 @@ Follow the sequence in this chronological order starting from the basic moving t
 design_pattern_oop (package): 
 NOTE: This package has been moved to another repo. To learn more about Classes and Objects, check my repo [Java-OOP-UML](https://github.com/anmarjarjees/java-oop-uml)   
 
+10. Exceptions (package):
+    - C1.ExceptionIdea.java
+    - C2.ExceptionWork.java
 
-10. file_io_operations (package): 
+11. file_io_operations (package): 
 The basic concepts to review before using File I/O:
 - Main Memory-RAM: Where our variables/constants live through the application runtime and it is volatile. It's used by the CPU frequently to manipulate data quickly
 - Secondary Memory/Storage: like Hard Drive where files live for the long-term, and it is non-volatile

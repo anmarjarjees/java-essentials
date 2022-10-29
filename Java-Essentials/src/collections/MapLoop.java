@@ -21,8 +21,10 @@ public class MapLoop {
          * Loop Through a HashMap:
          */
 
-        // Use the keySet() method if you only want the keys:
         // Print keys
+        // for (key : HashMap.keySet())
+        // Use the keySet() method if you only want the keys:
+        // .keySet() => Returns a Set view of the keys contained in
         for (String item : studIds.keySet()) {
             System.out.println(item);
         }
@@ -32,8 +34,13 @@ public class MapLoop {
         for (String item : studIds.keySet()) {
             System.out.println(item);
         }
+        
+        // Output/print both the keys and the values:
+        for (String key : studIds.keySet()) {
+            System.out.println(key + ": " + studIds.get(key));
+        }
 
-        // Print keys and values:
+        // Print keys and values using different text format:
         for (String item : studIds.keySet()) {
             System.out.println("Student Name (Key): " + item + " - ID (Value): " + studIds.get(item));
         }
