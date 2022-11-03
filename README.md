@@ -1,6 +1,8 @@
 # java-essentials
 Learning the essentials of Java Programming Language
 
+NOTE: To access all code examples: open the sub-folder "Java-Essentials" then the "src" folder then select your folder (package) that contains all the java files
+
 # Java
 A programming language that was first developed by Sun Microsystems in 1995. Then owned by Oracle.
 
