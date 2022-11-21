@@ -51,6 +51,5 @@ public class WrapperClass {
 
         double avg = Double.parseDouble(strAvg);
         System.out.println(avg); // 89.73
-
     } // end main()
-}
+} // end class file

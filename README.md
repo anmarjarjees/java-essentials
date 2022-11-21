@@ -195,48 +195,52 @@ To start with, the root folder for Java files which is "src":
 
 # My Packages Order:
 Follow the sequence in this chronological order starting from the basic moving to more advanced topics:
-1. start (package): contains the following classes:
+1. start (package) => contains the following classes:
     - DataType
     - Strings
     - InputOutput
     - ControlFlow
 
-2. basic (package): contains the following classes:
+2. basic (package) => contains the following classes:
     - StartingPoint
     - PaymentCalculator
     - QuestionAnswer
 
-3. condition_decision (package): contains the following classes:
+3. condition_decision (package) => contains the following classes:
     - PaymentCalculator
     - GradingSystem
     - GradingMessage
     - LogicalOperator
 
-4. iteration_loops (package): contains the following classes:
+4. iteration_loops (package) => contains the following classes:
+    - WhileLoop
+    - DoWhileLoop
     - WhileDoLoop
     - ForLoop
     - NestedBreak
 
-5. methods (package): contains the following classes:
+5. methods (package) => contains the following classes:
     - MyMethods
     - VariableScope
-    - Calculation.java
-    - OverloadedMethod.java
+    - Calculation
+    - OverloadedMethod
 
-6. arrays (package): contains the following classes:
-    - MyArray.java
-    - ArrayLoop.java
-    - MyArrayList.java
+6. arrays (package) => contains the following classes:
+    - MyArray
+    - ArrayLoop
+    - MyArrayList
+    - StringToArray
 
-7. classes_objects (package): contains the following classes:
+7. classes_objects (package) => contains the following classes:
     - Rectangle (the basic of creating classes)
     - Student (Constructors)
     - Main
     - WrapperClass
     
-9. collections (package): 
-    - MapInfo.java
-    - MapLoop.java
+9. collections (package) => contains the following classes: 
+    - MapInfo
+    - MapLoop
+    - StringToArrayList
 
 design_pattern_oop (package): 
 NOTE: This package has been moved to another repo. To learn more about Classes and Objects, check my repo [Java-OOP-UML](https://github.com/anmarjarjees/java-oop-uml)   

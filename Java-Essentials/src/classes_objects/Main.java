@@ -81,6 +81,29 @@ public class Main {
         WrapperClass wClassObj = new WrapperClass();
         wClassObj.getWrapperVariables();
 
+        /*
+         * More examples: Wrapping Variable with a class name
+         */
+        System.out.println();
+        System.out.println("Wrapping Class Simple Examples:");
+        int value1 = 10;
+        System.out.println(value1);
+
+        Integer value2 = 10;
+        System.out.println(value2);
+
+        // more example // Float
+        Double salary1 = 90.90;
+        System.out.println(salary1);
+
+        double salary2 = 90.90;
+        System.out.println(salary2);
+
+        int result = salary1.compareTo(salary2); // 0, negative, positive
+        System.out.println(result);
+        System.out.println("End of Wrapping Class simple example");
+        System.out.println();
+
         scanner.close();
 
         // Creating an object from our custom WrapperClass:

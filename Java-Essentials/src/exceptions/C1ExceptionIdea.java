@@ -35,9 +35,15 @@ public class C1ExceptionIdea {
          * > the value of 0.0 (as double data type)
          * > f0.0(as float data type)
          * Java will just display the result as "infinity"
+         * Because it supports The IEEE-754 standard
+         * that describes floating-point formats,
+         * a way to represent real numbers in hardware.
+         * which say that when you divide by zero, in floating Point
+         * arithmetic, you get either positive or negative Infinity depending on whether
+         * the values that you're using are positive or negative
          * 
          * Java will throw and exception (a run-time error) if you divide by 0 of
-         * integer data type.
+         * integer data type as this operation is not allowed in Java
          * 
          * Notice if both the numerator and denominator are 0:
          * The output => The result of dividing 0.0 by 0.0 is: NaN
@@ -71,5 +77,28 @@ public class C1ExceptionIdea {
          */
 
         input.close();
+        /*
+         * Important Notes:
+         * Some methods in Java has the potential to throw exceptions
+         * for example, if you hover the mouse over the method .nextInt(),
+         * VS Code will show you the exceptions:
+         * 
+         * Throws:
+         * InputMismatchException - if the next token does not match
+         * the Integer regular expression, or is out of range
+         * NoSuchElementException - if input is exhausted
+         * IllegalStateException - if this scanner is closed
+         * 
+         * You can check them by going the "Scanner Class Page":
+         * Link: https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/
+         * Scanner.html
+         * 
+         * Then click the "METHOD" from top menu and scroll to nextInt()
+         * Link: https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/
+         * Scanner.html#nextInt()
+         * 
+         * so if you input a String value instead of integer numeric value,
+         * You will get: InputMismatchException
+         */
     } // end main()
 } // end class file

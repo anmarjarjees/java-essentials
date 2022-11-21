@@ -37,7 +37,7 @@ public class WhileDoLoop {
             grossPay = payRate * workedHours;
             System.out.println("The gross payment is: $" + grossPay);
         } else {
-            System.out.println("Sorry Invalid entry. Your hours must be between 1 and 40");
+            System.out.println("Sorry Invalid entry. Your hours must be between 1 and 35");
         }
 
         // While loop can used when we have condition:
@@ -70,7 +70,8 @@ public class WhileDoLoop {
 
         /*
          * Do While Loop
-         * similar to while loop, it checks the condition after at least on execution of
+         * similar to while loop, but it checks the condition after at least on
+         * execution of
          * the loop block/code
          * - rarely used
          * Let's repeat the same idea while loop above
