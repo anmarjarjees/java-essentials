@@ -1,7 +1,7 @@
 package arrays;
 
 /* 
- * Array List: is part of "collections"
+ * Array List: is part of "Collections"
 > Package java.util
 >> Class ArrayList<E>
 >>> java.lang.Object
@@ -16,8 +16,9 @@ implements List<E>, RandomAccess, Cloneable, Serializable
 Link: https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/util/ArrayList.html
  * - Has Flexible size, we can add/remove elements
  * - It's part of the "java.util" package
+ * - it can have duplicate elements (values) because it's built on array structure
  * - Can only hold reference data type values (elements), not primitive,
- * The good news there is solution to overcome this limitation
+ * The good news there is solution to overcome this limitation of only "Reference"data types
  */
 
 // import the "ArrayList" class from "java.util" package
@@ -78,20 +79,46 @@ public class MyArrayList {
             System.out.println(myLanguages.get(i));
         } // end for
 
-        // .set() method to change an item in the array list:
+        // .set() method to change/replace an item in the array list:
         // modify the third element "Dodge" to be "Jeep"
         // third element has index of 2:
         cars.set(2, "Jeep");
 
+        // using .indexOf() to return the index of any element:
+        // NOTE: if the element is duplicated, it will return the index of the first
+        // element
+        System.out.println("The index of Jeep is: " + cars.indexOf("jeep"));
+        /*
+         * If the element we are acquiring its index is duplicated,
+         * and we want the index of the last element
+         * we can use the method: lastIndexOf("...")
+         */
+
         // testing:
         System.out.println(cars);
+
+        /*
+         * Using .remove() method to remove an element by:
+         * - the index value
+         * - the object
+         * 
+         * Notice that if we remove by object,
+         * Java will remove only the first instance/element
+         * if the element is duplicated
+         */
 
         // .remove() method to remove an item from the array list:
         // remove the last item:
         cars.remove(cars.size() - 1);
 
         // testing:
-        System.out.println(cars);
+        System.out.println("The current list:" + cars);
+
+        // remove by object:
+        cars.remove("Jeep");
+
+        // testing:
+        System.out.println("The current list after removing the \"Jeep\": " + cars);
 
         /*
          * Creating an array list of integer values
@@ -105,12 +132,17 @@ public class MyArrayList {
 
         // notice we can get the value as primitive data type:
         int mySecondLuckyNumber = myLuckyNumbers.get(1);
+        System.out.println("My second lucky number: " + mySecondLuckyNumber);
 
         for (int i = 0; i < myLuckyNumbers.size(); i++) {
             // Yes, using .get(i) method instead of [i]
             System.out.println(myLuckyNumbers.get(i));
         } // end for
 
-    }
+        // clear all the elements in the list (remove all elements):
+        System.out.println(cars); // [Toyota, Nissan, Jeep, Ford]
+        cars.clear();
+        System.out.println(cars); // []
+    } // end main()
 
-}
+} // end class file

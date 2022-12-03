@@ -24,9 +24,9 @@ public class NestedBreak {
         input.close();
 
         int i;
-        for (i = 1; i < num; i++) {
+        for (i = 1; i <= num; i++) {
             // we need to break the loop if the num is greater than 20:
-            if (i > 20) {
+            if (i > 10) {
                 break;
             }
             System.out.println("Current count value: " + i);

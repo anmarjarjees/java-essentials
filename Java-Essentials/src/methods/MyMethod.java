@@ -16,7 +16,7 @@ import java.util.Scanner;
  * - from the "System" class to output data
  * 
  */
-public class MyMethods {
+public class MyMethod {
     /*
      * Java application (class) always starts with the method "main"
      * (The Starting Entry Point of a standalone Java application)
@@ -100,18 +100,17 @@ public class MyMethods {
      * - The keyword "public" as the name indicate, means that this method can be
      * accessed publicly
      * from any class that uses this method
-     * In Java, there are 4 types of access modifiers (visibility modifiers):
-     * - "default": which is the default option in Java if we don't specify
+     * In Java, there are 4 types of "access modifiers" (visibility modifiers):
+     * 1- "default": which is the default option in Java if we don't specify
      * (without adding the keyword)
-     * - "public": a method or a data field specified as "public" is accessible
+     * 2- "public": a method or a data field specified as "public" is accessible
      * from any class within the same package in the Java program.
-     * - "private": a method or a field that is declared as private
+     * 3- "private": a method or a field that is declared as private
      * can be accessible within the declared class itself
      * not accessible outside the class.
      * (We cannot declare a private class only private field or method)
-     * - "protected": The field/method is accessible by the classes within the same
-     * package
-     * or by subclasses within the same package or other packages
+     * 4- "protected": The field/method is accessible by the classes within the same
+     * package or by subclasses within the same package or other packages
      * 
      * Second Keyword: "static" => Non-access Modifier => do not control access
      * level, but provides other functionality.

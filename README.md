@@ -5,6 +5,7 @@ NOTE: To access all code examples: open the sub-folder "Java-Essentials" then th
 
 # Java
 A programming language that was first developed by Sun Microsystems in 1995. Then owned by Oracle.
+The main link for [Java Standard Edition Documentation](https://docs.oracle.com/en/java/)
 
 # Objective
 - Installing the required tools to write and run Java programs
@@ -238,9 +239,15 @@ Follow the sequence in this chronological order starting from the basic moving t
     - WrapperClass
     
 9. collections (package) => contains the following classes: 
+    - ListInfo
+    - LinkedListInfo
     - MapInfo
     - MapLoop
     - StringToArrayList
+    - SetInfo
+    - QueueInfo
+
+You can check this short and quick video about "Java Collection"
 
 design_pattern_oop (package): 
 NOTE: This package has been moved to another repo. To learn more about Classes and Objects, check my repo [Java-OOP-UML](https://github.com/anmarjarjees/java-oop-uml)   

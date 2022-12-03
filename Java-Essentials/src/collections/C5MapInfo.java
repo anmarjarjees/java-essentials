@@ -3,7 +3,11 @@ package collections;
  * We covered ListArray which is a type of List 
  * and List is a type of a "Collection"
  * 
- * Map and HashMap are also types of collections
+ * Map is not a true collection, its characteristics and behaviors are different than the other collections, 
+ * but it's still considered to be part of the "Collection" framework
+ * Map is an incompatible type in comparing to List, Set and Queue which are a collection of similar kind of 
+ * objects that contain just values where a Map is a collection of key and value pairs.
+ * 
  * HashMap:
  * Package java.util
  * Class HashMap<K,V>
@@ -23,10 +27,12 @@ Serializable, Cloneable, Map<K,V>
  * Importing "HashMap":
  */
 import java.util.HashMap;
+import java.util.Map;
 
-public class MapInfo {
+public class C5MapInfo {
     public static void main(String[] args) {
         /*
+         * "Map" Interface:
          * Map: set of key/value pairs
          * Examples (looks like JSON object, but without commas):
          * {
@@ -35,18 +41,24 @@ public class MapInfo {
          * "Module" : "Java Fundamentals" *
          * }
          * The key "Student Name" has the value of "Alex Chow"
+         * 
+         * Important Note:
          * > We can NOT have duplicate keys => keys are unique
+         * > We can have duplicate values
+         * > The keys (elements) are unordered
          * > The keys and values could be of any data type
          * 
-         * Creating a Map:
-         * Students name and Students IDs
          * 
          * Java will ask to identify the data types of key/values
          * key => value
          * Student Name => Student ID value
          * String data type => Integer data type
          * 
-         * The implementation of Map structure are done by using a class "HashMap"
+         * The popular implementation of Map structure are done by using:
+         * - "HashMap" class
+         * - "TreeMap" class
+         * - "LinkedHashMap" class
+         * 
          * The class "HashMap" is an implementation of the interface "Map"
          * 
          * Notice the use of Wrapper Class "Integer"
@@ -63,7 +75,33 @@ public class MapInfo {
          * But the new one:
          * HashMap<String, Integer> studIds = new HashMap<>();
          */
-        HashMap<String, Integer> studIds = new HashMap<>();
+
+        /*
+         * Example of creating a collection of books named "myBooks"
+         * that contains the book names as the key
+         * and the number of pages as the value
+         */
+        Map<String, Integer> myBooks = new HashMap<>();
+        /*
+         * unlike other collection,
+         * Map uses put to add element (not add)
+         */
+        myBooks.put("HTML and CSS", 450);
+        myBooks.put("Beginning JavaScript", 739);
+        myBooks.put("PHP and MySQL", 832);
+        myBooks.put("Java Core", 884);
+        myBooks.put("C# Programming", 832);
+
+        System.out.println(myBooks);
+        /*
+         * {
+         * C# Programming=832,
+         * Beginning JavaScript=739,
+         * HTML and CSS=450,
+         * PHP and MySQL=832,
+         * Java Core=884
+         * }
+         */
 
         /*
          * We also have Map Interface that specifies Map implementations
@@ -73,6 +111,12 @@ public class MapInfo {
          * but they have different implementation under the hood
          */
 
+        /*
+         * Creating a Map:
+         * Students name and Students IDs
+         */
+
+        HashMap<String, Integer> studIds = new HashMap<>();
         // add elements (key and value):
         studIds.put("Alex Chow", 1234);
         studIds.put("Martin Smith", 5321);
@@ -152,11 +196,11 @@ public class MapInfo {
         // Testing our custom method changeValue():
         changeValue(studIds, "Kate Wilson", 1010);
         System.out.println(studIds);
-        
+
         // call our method with a NOT exist Key:
         changeValue(studIds, "James Dean", 1000); // no changes
 
-        // Removing an item
+        // Removing an item => passing the key on element
         studIds.remove("Allen Chow");
         // testing:
         System.out.println(studIds);
@@ -181,11 +225,11 @@ public class MapInfo {
         System.out.println(studIds.size()); // 5
     } // end main()
 
-    /* 
+    /*
      * Adding our custom method for for changing the value of a key
      * changing the students ID:
      */
-    static void changeValue(HashMap<String, Integer> tempMap, String key,int value){
+    static void changeValue(HashMap<String, Integer> tempMap, String key, int value) {
         tempMap.replace(key, tempMap.get(key), value);
     }
 } // end file class
