@@ -165,7 +165,6 @@ public class Hello {
 }
 ```
 
-
 # Packages
 Another important concept to understand, When you start a new project in Java is "Packages". Packages are used to group related classes (Remember that the Java file is called "Class"). When building big applications, we might end up with too many Java files (classes) so it's better to group them under one namespace to avoid any conflict with the variables, and objects that have the same names when many projects are merged together. It's exactly when we create folders on our computers to contain, organize, and separate our files. Dedicated Java IDE like IntelliJ IDEA, NetBeans, or Eclipse will ask you for the project name first and then might give you the option to add the package name at the very beginning when starting a new project, well with IntelliJ, you need to right-click the "src" folder and "New" then "Package". VS Code has extensions that we need to install as mentioned above, and we need to add a package manually by revealing the "JAVA PROJECTS" then Right Click the project name, and selecting "New Package" from the context menu.
 A project can have multiple packages to group related classes together under the same folder/category which means under the same package. 
@@ -238,7 +237,7 @@ Follow the sequence in this chronological order starting from the basic moving t
     - Main
     - WrapperClass
     
-9. collections (package) => contains the following classes: 
+8. collections (package) => contains the following classes: 
     - ListInfo
     - LinkedListInfo
     - MapInfo
@@ -250,13 +249,12 @@ Follow the sequence in this chronological order starting from the basic moving t
 You can check this short and quick video about "Java Collection"
 
 design_pattern_oop (package): 
-NOTE: This package has been moved to another repo. To learn more about Classes and Objects, check my repo [Java-OOP-UML](https://github.com/anmarjarjees/java-oop-uml)   
+NOTE: This package has been moved to another repo. To learn more about Classes and Objects, check my repo ["Java-OOP-UML"](https://github.com/anmarjarjees/java-oop-uml)   
 
-10. Exceptions (package):
-    - C1.ExceptionIdea.java
-    - C2.ExceptionWork.java
+exceptions (package):
+NOTE: This package has been moved to another repo. To learn more about "Exception", check my repo ["Java-Extra"](https://github.com/anmarjarjees/java-extra)   
 
-11. file_io_operations (package): 
+9. file_io_operations (package): 
 The basic concepts to review before using File I/O:
 - Main Memory-RAM: Where our variables/constants live through the application runtime and it is volatile. It's used by the CPU frequently to manipulate data quickly
 - Secondary Memory/Storage: like Hard Drive where files live for the long-term, and it is non-volatile
@@ -281,9 +279,6 @@ The File class has many methods for manipulating files including:
 - list(): String[] => Returns an array of the files in the directory
 - mkdir(): Boolean => Creates a directory
 
-NOTE: These 2 packages have been moved to another repo. To learn more about Swing/AWT GUI and Events, check my rep [Java-UI-Swing](https://github.com/anmarjarjees/java-ui-swing)   
-user_interfaces (package)
-user_interface_events (package)
 
 # UML (Unified Modeling Language) Learning Resources based on different UML tools Docs:
 

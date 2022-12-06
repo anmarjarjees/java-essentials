@@ -26,7 +26,7 @@ public class WrapperClass {
          * exam2 is an object
          */
         System.out.println("Practising Wrapper Class:");
-
+        System.out.println(exam1); // exam1 is just a primitive data type
         System.out.println(exam2); // exam2 is an object that has properties/methods
 
         /*
