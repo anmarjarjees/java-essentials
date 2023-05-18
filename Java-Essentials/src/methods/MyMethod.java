@@ -18,24 +18,33 @@ import java.util.Scanner;
  */
 public class MyMethod {
     /*
-     * Java application (class) always starts with the method "main"
-     * (The Starting Entry Point of a standalone Java application)
-     * an it's the only method that are being called and run by Java automatically
-     * The "main" method is similar to the main function in C and C++;
-     * it's the entry point for your application
-     * and will subsequently invoke all the other methods required by your program.
+     * Java application (class) always starts with the method "main":
+     * - it's similar to the main function in C and C++;
+     * - The Starting Entry Point of a standalone Java application (the entry point
+     * for our application)
+     * - it's the only method that are being called and run by Java automatically
+     * - it will subsequently invoke all the other methods required by your program.
      * 
+     * 
+     * Analyzing the main() method syntax:
+     * ***********************************
      * public => The Access Modifier => It's accessible anywhere (OOP concept)
+     * it can be run from any class in any package!
+     * 
      * static => The method can be called and executed directly
      * without creating an instance (object) of the "MyMethod" class
+     * so it's attached/belonged to the class itself and NOT an instance of the
+     * class
+     * 
      * Notice that the modifiers public and static can be written in either order
      * (public static or static public), but the convention is to use public static
      * 
      * void => the return data type of this method
-     * and it's void so nothing to return
+     * and it's void so nothing to return (no return type)
      * 
      * main => the method name that JVM uses when it starts a standalone application
      * 
+     * Inside the method parenthesis:
      * String[] => An array of elements of string data types
      * so the main method accepts a single argument:
      * an array of elements of type "String"
@@ -79,6 +88,12 @@ public class MyMethod {
 
         System.out.println(mathOperation.add());
 
+        /* 
+         * Working the getSquareArea() method:
+         * this method is not static, so it can only be called by this class object:         * 
+         */
+        MyMethod myMethod = new MyMethod();
+        System.out.println(myMethod.getSquareArea(7.8));
     } // end main()
 
     /*
@@ -100,15 +115,25 @@ public class MyMethod {
      * - The keyword "public" as the name indicate, means that this method can be
      * accessed publicly
      * from any class that uses this method
+     * 
+     * Types of Access Modifiers:
+     * **************************
      * In Java, there are 4 types of "access modifiers" (visibility modifiers):
-     * 1- "default": which is the default option in Java if we don't specify
-     * (without adding the keyword)
+     * 
+     * 1- "default": which is "Package Private", the default option in Java if we
+     * don't specify
+     * (without adding the keyword).
+     * Package Private means only classes within the same package can call/run the
+     * method
+     * 
      * 2- "public": a method or a data field specified as "public" is accessible
      * from any class within the same package in the Java program.
+     * 
      * 3- "private": a method or a field that is declared as private
      * can be accessible within the declared class itself
      * not accessible outside the class.
      * (We cannot declare a private class only private field or method)
+     * 
      * 4- "protected": The field/method is accessible by the classes within the same
      * package or by subclasses within the same package or other packages
      * 
@@ -146,12 +171,13 @@ public class MyMethod {
      * These parameters are mandatory to receive values (arguments) when the method
      * is being called
      * 
-     * Method Signiture:
-     * Every method has a signiture which is consisted of:
+     * Method Signature:
+     * Every method has a signature which is consisted of:
      * - The method's name
      * - The method's parameter list
      * 
-     * The "Method signiture" must be unique within a class
+     * The "Method signature" must be unique within a class:
+     * either different name or different parameters or both
      * 
      * Finally: the method body which is contained with a set of curly braces
      * 
@@ -162,7 +188,7 @@ public class MyMethod {
      * - To run any of these method we need to call them:
      * - either from inside the main method
      * - or outside the main method but for sure within the class
-     * - the have the keyword "static":
+     * - they have the keyword "static":
      * it means that the method belongs to "MyMethod" class
      * and not an object of "MyMethod" class
      */
@@ -221,6 +247,18 @@ public class MyMethod {
             return true;
         else
             return false;
+    }
+
+    /*
+     * Finally: let's create a method without the keyword "static",
+     * which means this method can be accessed by the class instance only
+     * 
+     * let's create a method to find The area of a square
+     * The Formula for the Area of A Square is equal to:
+     * (side) × (side) square units.
+     */
+    double getSquareArea(double side) {
+        return side * side;
     }
 
 } // end class MyMethod

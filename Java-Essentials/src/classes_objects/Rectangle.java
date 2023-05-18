@@ -94,7 +94,7 @@ public class Rectangle {
      * Thinking about the actions (methods)?
      * How can we use the rectangle fields?
      * 
-     * To find the parameter of this rectangle:
+     * To find the Perimeter of this rectangle:
      * Perimeter = 2 × (a + b)
      */
     public double calculatePerimeter() {

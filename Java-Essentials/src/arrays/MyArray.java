@@ -44,12 +44,14 @@ public class MyArray {
                 // Using an array instead:
                 /*
                  * Creating an array using a new operator
-                 * and determine the size of the array (how many values can store)
+                 * and determine the size of the array (how many values can this array store or have)
+                 * 
+                 * The syntax: dataType[] arrayName = new dataType[size]
                  */
                 int[] myLuckyNumbers = new int[5];
 
                 // Can be done in two lines also!
-                // 1. Just declaring an array varaible
+                // 1. Just declaring an array variable
                 int[] myFavChannelsNumbers;
 
                 // 2. Then Initialize the array with 9 empty places
@@ -117,10 +119,10 @@ public class MyArray {
                 // languages[5] = "Java"; // Error: Index 5 out of bounds for length 5
 
                 // We can change an existing element by its index:
-                // replace "PHP" in index 4 with "Java"
-                languages[4] = "Java";
+                // replace "PHP" in index 3 with "Java"
+                languages[3] = "Java";
 
-                System.out.println("Our current semester language in the list is " + languages[4]);
+                System.out.println("Our current semester language in the list is " + languages[3]);
 
                 /*
                  * Don't forget that Java is an object-oriented programming language,
@@ -142,7 +144,7 @@ public class MyArray {
                  * - Array itself is always a reference data type even if it holds
                  * primitive or reference data type
                  * - The highest index in the array is its length - 1
-                 * - You have noticed that by convention, Arrays' varaible names are plural
+                 * - You have noticed that by convention, Arrays' variable names are plural
                  * since they store multiple values, unless you like to use myArray,
                  * temporaryArray, xArray, etc..
                  */

@@ -19,6 +19,10 @@ public class InputOutput {
         String lastName = "Chow";
         double studentAverage = 93.78;
 
+        /* 
+         * We use the + sign for concatenation (combining literal text with variables)
+         * which means the + sign is NOT used for mathematical operations
+         */
         System.out.println(firstName + " " + lastName + " has the average of " + studentAverage);
 
         System.out.println("Enter his new average value?");

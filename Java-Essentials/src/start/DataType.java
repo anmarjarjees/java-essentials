@@ -1,13 +1,20 @@
 /*
 in VS Code
 CTRL+SHIFT+P ==> Create Java Project ==> Select a new folder
-make a new class file named "InputOutput.java"
+make a new class file named "DataType.java"
 OR:
 File ==> Open Folder
 */
-package start;
+
+
+/* 
+ * adding the package the name which the folder that contains this class file.
+ * "package" in Java is like a group of Java class files within the same folder
+ */
+package start; // NOTE: every Java statement must end with a semicolon ;
 
 /*
+ * We can store any value into a variable which is a temporary container inside the RAM when we run our app
  * Data Types in Java are classified into two main categories:
  * - Primitive Types => 
  * >> are the basic data types of Java that specify the size and type of variable values
@@ -24,6 +31,7 @@ package start;
  * 
  * - Reference (Non-Primitive) Data Types => refer to objects
  *  Non-primitive types are created by the programmer and is not defined by Java (except for String).
+ * those types of variables can have the value of "null"
  * String: a sequence of characters with double quotation marks ""
  * Since string is built on a series of characters so it's not a basic data type
  * Reference Types have operations (method)
@@ -45,7 +53,7 @@ package start;
 public class DataType {
     public static void main(String[] args) {
         // Creating our variables:
-        // Syntax: DataType label = value;
+        // Syntax: DataType variableName = value;
         // More valid examples of working with variables:
         /*
          * type varName; => Declare a variable of a type
@@ -60,7 +68,7 @@ public class DataType {
          * => Declare multiple variables of the SAME data type with initial values
          */
         // You should not abbreviate your variables, class, methods, etc... in coding
-        int studentAge = 23;
+        int studentAge = 23; // pronounced => studentAge equals 23
         double studentAverage = 93.78;
         char studentFirstInit = 'A'; // we use ' ' with char, we cannot use " " as it's for string like in C#
         char studentSecondInit = 'C';
@@ -82,6 +90,7 @@ public class DataType {
 
 /*
  * Java Variable Naming Conventions:
+ * *********************************
  * - variables start with lowercase
  * - using camelCase with more than one word
  * - No spaces

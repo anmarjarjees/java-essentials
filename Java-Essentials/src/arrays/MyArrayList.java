@@ -27,7 +27,8 @@ import java.util.ArrayList;
 public class MyArrayList {
     public static void main(String[] args) {
         /*
-         * We don't have to specify a size :-)
+         * We don't have to specify the size :-)
+         * so ArrayList can have unlimited number of items/elements :-)
          * 
          * Using the new keyword for the ArrayList constructor
          * and also using the diamond operator <>
